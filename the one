@@ -1,0 +1,147 @@
+#冒泡排序
+lis = [23,45,1,7,9,3,22,99,76,53,64,76,32,31,84,90]
+def sortport():
+    for i in range(len(lis)-1):
+        for j in range(len(lis)-1-i):
+            if lis[j]>lis[j+1]:
+                lis[j],lis[j+1] = lis[j+1],lis[j]
+    return lis
+    
+#计算X的n次方的方法
+def power(x,n):
+    s=1
+    while n>0:
+        n-=1
+        s*=x
+    return s
+    
+    
+#计算a*a+b*b+c*c.....
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n*n
+    return sun
+    
+    
+#计算阶乘   n！
+def fac():
+    num = int(input('请输入一个数字：'))
+    factorial = 1
+    
+    #查看数字是负数，0或者整数
+    if num <0:
+        print('抱歉，负数没有阶乘！')
+    elif num == 0:
+        print('0的阶乘是1')
+    else:
+        for i in range(1,num+1):
+            factorial = factorial*i
+        print('%d 的阶乘为 %d'(num,factorial))
+def factorial (n):
+    result = n
+    for i in range (1,n)
+        result* = i
+    return result
+    
+def fact(n):
+    if n == 1:
+        return 1
+    return n*fact(n-1)
+#列出当前目录下的所有文件和目录名
+
+[d for d in os.listdir('.')]
+
+#把一个list中所有的字符串变成小写
+
+L = ['hello','World','IBM',Apple]
+[s.lower() for s in L]
+print(s)
+
+#输出某个路径下的所有文件和文件夹的路径
+
+def print_dir():
+    filepath = input('请输入一个路径：')
+    if filepath == '':
+        print('请输入一个正确的路径')
+    else:
+        for i in os.listdir(filepath):     #获取目录中的文件及子目录列表
+            print(os.path.join(filepath,i)) #把路径组合起来
+            
+    print(print_dir())
+    
+#输出某个路径及其子目录下的所有文件路径
+
+def show_dir(filepath):
+    for i in os.listdir(filepath):
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+  
