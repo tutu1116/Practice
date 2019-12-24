@@ -74,7 +74,107 @@ def print_dir():
 
 def show_dir(filepath):
     for i in os.listdir(filepath):
-        
+        path = (os.path.join(filepath,i))
+        print(path)
+        if os.path.isdir(path)    #isdir（）判断是否是目录
+            show_dir(path)        #如果是目录  使用递归方法
+            
+            
+#输出某个路径及其子目录下所有以HTML为后缀的文件
+
+def print_dir(filepath):
+    for i in os.listdir(filepath):
+        path = os.path.join(filepath,i)
+        if os.path.isdir(path):
+            print(path)
+        if path.endswith('.html')
+            print(path)
+    filepath = 'E:\PycharmProjects'#路径
+    print_dir(filepath)
+    
+#把原字典的键值对颠倒并产生新的字典
+
+dict1 = {'A':'a','B':'b','C':'c','D':'d','E':'e'}
+dict2 = {y:x forx,y in dict1.items()}
+print(dict2)
+
+#打印九九乘法表
+
+for i in range(1,10):
+    for j in range(1,i+1):
+        #print('{}x{}={}\t'.format(j,i,j*i),end='')    #通过指定end参数的值  可以取消在末尾输出的回车符，实现不换行
+        print('%d x %d = %d \t '%(j,i,j*i),end='')
+    print()    
+    
+    
+    
+#替换列表中的所有的3为3a
+num = ['harden','lampard',3,34,45,56,67,78,89,32,33,31,13,73]
+#print(num.count(3))
+#print(num.index(3))
+    
+    for i in range(num.count(3)):    #获取3出现的次数
+        ele_index = num.index(3)     #获取首次出现3 的坐标
+        num[ele_index] = '3a'        #修改为3a
+        print(num)
+
+#打印每个名字
+
+L = ['james','meng','xin']
+for i in range(len(L)):
+    print('Hello,%d'%L[i].title())
+    
+    
+#合并去重
+
+list1 = [1,2,3,4,5,6,7,8,9,0]
+list2 = [2,3,4,11,21,32,12,90]
+list3 = list1+list2
+print(list(set(list3)))
+
+#随机生成验证码的两种方式
+
+
+import  random
+list1 = []
+for i in range(65,91):
+    list1.append(char(i))          #通过for循环遍历asii码追加到空列表中
+for j in range(97,123):
+    list1.append(char(j)) 
+for k in range(48,58):
+    list1.append(char(k))
+ma = random.sample(list1,6)
+print (ma)
+ma = ''.join(ma)           #把列表转化为字符串
+print(ma)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
     
     
     
